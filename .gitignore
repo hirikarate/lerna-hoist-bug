@@ -1,0 +1,7 @@
+lerna-debug.log
+**/.nyc_output
+**/node_modules
+**/*.log
+**/coverage
+**/dist/test
+**/dist/**/*.map

@@ -1,0 +1,25 @@
+{
+	"name": "lerna-hoist-bug",
+	"version": "1.0.0",
+	"description": "Demonstrate Lerna's bug.",
+	"workspaces": {
+		"packages": ["packages/*"],
+		"nohoist": ["*"]
+	},
+	"scripts": {
+		"clean": "lerna run clean",
+		"postinstall": "link-parent-bin"
+	},
+	"devDependencies": {
+		"chalk": "~2.4",
+		"cross-env": "~5.1",
+		"link-parent-bin": "~0.2",
+		"rimraf": "~2.6"
+	},
+	"author": {
+		"name": "hirikarate",
+		"url": "https://github.com/hirikarate"
+	},
+	"repository": "git@github.com:hirikarate/lerna-hoist-bug.git",
+	"private": true
+}
